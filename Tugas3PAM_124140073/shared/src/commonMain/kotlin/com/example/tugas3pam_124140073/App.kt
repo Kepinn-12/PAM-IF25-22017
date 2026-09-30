@@ -78,7 +78,8 @@ fun App() {
         ) {
             ProfileHeader(
                 namaLengkap = "Jhon Kevin H. Tambun",
-                deskripsi = "Informatika ITERA | ML Engineering"
+                deskripsi = "Informatika ITERA | ML Engineering",
+                asal = "From Sumatera Utara"
             )
 
             Spacer(modifier = Modifier.height(16.dp))
@@ -89,7 +90,7 @@ fun App() {
                 modifier = Modifier.height(48.dp)
             ) {
                 Text(
-                    text = if (isContactVisible) "Tutup" else "Kontak",
+                    text = if (isContactVisible) "Back" else "Contact",
                     fontWeight = FontWeight.Bold,
                     fontSize = 15.sp,
                     modifier = Modifier.padding(horizontal = 16.dp)
@@ -114,7 +115,7 @@ fun App() {
 }
 
 @Composable
-fun ProfileHeader(namaLengkap: String, deskripsi: String) {
+fun ProfileHeader(namaLengkap: String, deskripsi: String, asal : String) {
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = Modifier.fillMaxWidth().padding(top = 40.dp, bottom = 16.dp)
@@ -152,7 +153,12 @@ fun ProfileHeader(namaLengkap: String, deskripsi: String) {
             fontWeight = FontWeight.Medium
         )
         Spacer(modifier = Modifier.height(4.dp))
-        
+        Text(
+            text = asal,
+            color = Color.Gray,
+            fontSize = 15.sp,
+            fontWeight = FontWeight.Medium
+        )
     }
 }
 
