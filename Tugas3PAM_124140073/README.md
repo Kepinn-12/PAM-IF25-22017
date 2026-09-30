@@ -7,5 +7,5 @@
 Aplikasi profil interaktif yang dibangun menggunakan Compose Multiplatform dengan custom warna tema dan AnimatedVisibility.
 
 ## Screenshot Aplikasi
-![Tampilan Awal](screenshots/Screenshot1.png)
+![Tampilan Awal](screenshots/Screenshot1.png)  
 ![Tampilan Info Kontak Terbuka](screenshots/Screenshot2.png)
