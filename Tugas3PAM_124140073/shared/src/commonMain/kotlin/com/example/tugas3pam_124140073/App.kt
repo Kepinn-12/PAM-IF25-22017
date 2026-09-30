@@ -189,7 +189,7 @@ fun ProfileContactCard(email: String, noTelp: String, lokasi: String, ig: String
                 modifier = Modifier.fillMaxWidth().height(40.dp),
                 shape = RoundedCornerShape(12.dp)
             ) {
-                Text("Kirim Pesan", fontWeight = FontWeight.Bold, fontSize = 16.sp)
+                Text("Send Message", fontWeight = FontWeight.Bold, fontSize = 16.sp)
             }
         }
     }
